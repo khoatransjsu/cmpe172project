@@ -1,6 +1,7 @@
+/* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import { Row, Col, Button } from "reactstrap";
-
+import image from "../images/cafe.jpg"
 export default props => {
   return (
     <div>
@@ -24,9 +25,9 @@ export default props => {
       <Row noGutters className="text-center big-img-container">
         <Col>
           <img
-            src={require("../images/cafe.jpg")}
+            src={image}
             alt="cafe"
-            className="big-img"
+            className="md-img"
           />
         </Col>
       </Row>

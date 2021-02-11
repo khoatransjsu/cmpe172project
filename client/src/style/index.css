@@ -65,9 +65,9 @@ body {
   }
 }
 .big-img {
-  width: 96%;
-  border-radius: 25px;
-  border-bottom-left-radius: 25px;
+  width: 50%;
+  border-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .selected-table {
@@ -255,4 +255,4 @@ input[type=date]::-webkit-calendar-picker-indicator {
   }
 }
 
-/*# sourceMappingURL=index.css.map */
+

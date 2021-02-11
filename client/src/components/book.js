@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import React, { useState, useEffect } from "react";
 import {
   Row,
@@ -11,6 +12,8 @@ import {
 } from "reactstrap";
 
 import Table from "./table";
+
+
 
 export default props => {
   const [totalTables, setTotalTables] = useState([]);
