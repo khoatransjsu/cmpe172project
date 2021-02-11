@@ -1,3 +1,9 @@
-import express from "express";
+var express = require('express');
 
-const router = express.Router();
+var router = express.Router();
+
+router.get('/', function(req,res,next){
+    res.status(200).send("Server Ok");
+})
+
+module.exports = router;
