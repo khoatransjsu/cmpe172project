@@ -12,7 +12,6 @@ for (i = 1; i < numTables; i++) {
   fakeTables.push({
     name: name,
     capacity: chairs,
-    // isAvailable: availability,
     isAvailable: true,
     location: location
   });
