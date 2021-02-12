@@ -1,4 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
+
 import React, { useState, useEffect } from "react";
 import {
   Row,
@@ -12,7 +13,6 @@ import {
 } from "reactstrap";
 
 import Table from "./table";
-
 
 
 export default props => {
@@ -87,11 +87,11 @@ export default props => {
   };
 
   useEffect(() => {
-    // Check availability of tables from DB when a date and time is selected
+    
     if (selection.time && selection.date) {
       (async _ => {
         let datetime = getDate();
-        let res = await fetch("http://localhost:3005/availability", {
+        let res = await fetch("http://localhost:5000/availability", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -126,7 +126,7 @@ export default props => {
       setReservationError(true);
     } else {
       const datetime = getDate();
-      let res = await fetch("http://localhost:3005/reserve", {
+      let res = await fetch("http://localhost:5000/reserve", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -233,7 +233,6 @@ export default props => {
     return newTimes;
   };
 
-  // Generating tables from available tables state
   const getTables = _ => {
     console.log("Getting tables");
     if (getEmptyTables() > 0) {
