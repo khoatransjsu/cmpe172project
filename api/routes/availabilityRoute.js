@@ -14,7 +14,7 @@ router.post("/", function(req, res, next) {
     if (!err) {
       if (docs.length > 0) {
         // Record already exists
-        console.log("Record exists. Sent docs.");
+        console.log("Record exists");
         res.status(200).send(docs[0]);
       } else {
         // Searched date does not exist and we need to create it
@@ -28,7 +28,7 @@ router.post("/", function(req, res, next) {
             res.status(400).send("Error saving new date");
           } else {
             // Saved date and need to return all tables (because all are now available)
-            console.log("Created new datetime. Here are the default docs");
+            console.log("Created new datetime");
             Day.find({ date: dateTime }, (err, docs) => {
               err ? res.sendStatus(400) : res.status(200).send(docs[0]);
             });

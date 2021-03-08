@@ -40,7 +40,7 @@ export default props => {
   // List of potential locations
   const [locations] = useState(["Any Location", "Patio", "Inside", "Bar"]);
   const [times] = useState([
-    "9AM",
+    "9:00 AM",
     "10AM",
     "11AM",
     "12PM",
@@ -48,7 +48,11 @@ export default props => {
     "2PM",
     "3PM",
     "4PM",
-    "5PM"
+    "5PM",
+    "6PM",
+    "7PM",
+    "8PM",
+
   ]);
   // Basic reservation "validation"
   const [reservationError, setReservationError] = useState(false);
@@ -101,7 +105,7 @@ export default props => {
           })
         });
         res = await res.json();
-        // Filter available tables with location and group size criteria
+        
         let tables = res.tables.filter(
           table =>
             (selection.size > 0 ? table.capacity >= selection.size : true) &&

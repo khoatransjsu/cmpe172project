@@ -11,7 +11,7 @@ export default props => {
             props.setPage(0);
           }}
         >
-          Pizza Cabin
+          Pho Cabin
         </NavbarBrand>
       </Navbar>
     </div>
