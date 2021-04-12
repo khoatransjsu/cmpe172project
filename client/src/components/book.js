@@ -41,17 +41,17 @@ export default props => {
   const [locations] = useState(["Any Location", "Patio", "Inside", "Bar"]);
   const [times] = useState([
     "9:00 AM",
-    "10AM",
-    "11AM",
-    "12PM",
-    "1PM",
-    "2PM",
-    "3PM",
-    "4PM",
-    "5PM",
-    "6PM",
-    "7PM",
-    "8PM",
+    "10:00 AM",
+    "11:00 AM",
+    "12:00 PM",
+    "1:00 PM",
+    "2:00 PM",
+    "3:00 PM",
+    "4:00 PM",
+    "5:00 PM",
+    "6:00 PM",
+    "7:00 PM",
+    "8:00 PM",
 
   ]);
   // Basic reservation "validation"
