@@ -1,4 +1,3 @@
-require("dotenv").config();
 var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
@@ -8,7 +7,7 @@ const cors = require("cors");
 // MongoDB
 const mongoose = require("mongoose");
 mongoose
-  .connect(process.env.DATABASE, {
+  .connect('mongodb://localhost:27017/docker-node-mongo', {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
