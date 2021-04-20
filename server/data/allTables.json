@@ -60,60 +60,6 @@
               "capacity":4,
               "isAvailable":true,
               "location":"Bar"
-            },
-            {
-              "name":"Table 11",
-             "capacity":3,
-             "isAvailable":true,
-             "location":"Bar"
-            },
-            {
-              "name":"Table 12",
-              "capacity":6,
-              "isAvailable":true,
-              "location":"Bar"
-            },
-            {
-              "name":"Table 13",
-              "capacity":3,
-              "isAvailable":true,
-              "location":"Patio"
-            },
-            {
-              "name":"Table 14",
-              "capacity":2,
-              "isAvailable":true,
-              "location":"Patio"
-            },
-            {
-              "name":"Table 15",
-              "capacity":2,
-              "isAvailable":true,
-              "location":"Bar"
-            },
-            {
-              "name":"Table 16",
-              "capacity":3,
-              "isAvailable":true,
-              "location":"Bar"
-            },
-            {
-              "name":"Table 17",
-              "capacity":2,
-              "isAvailable":true,
-              "location":"Bar"
-            },
-            {
-              "name":"Table 18",
-              "capacity":7,
-              "isAvailable":true,
-              "location":"Bar"
-            },
-            {
-              "name":"Table 19",
-              "capacity":6,
-              "isAvailable":true,
-              "location":"Bar"
             }
           ]
         }
