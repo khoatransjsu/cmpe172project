@@ -3,11 +3,12 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const cors = require("cors");
+require('dotenv').config();
 
 // MongoDB
 const mongoose = require("mongoose");
 mongoose
-  .connect('mongodb://localhost:27017/booking', {
+  .connect(`mongodb+srv://${process.env.DB_NAME}:${process.env.DB_PASS}@khoatran.v5cxx.mongodb.net/booking?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
@@ -29,7 +30,7 @@ app.use(cookieParser());
 app.use("/availability", require("./routes/availabilityRoute"));
 app.use("/reserve", require("./routes/reservationRoute"));
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT;
 
 app.listen(port, () => console.log(`Server is running on port ${port}`));
 

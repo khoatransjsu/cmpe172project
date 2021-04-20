@@ -7,9 +7,9 @@ export default _ => {
       <Row noGutters className="text-center">
         <Col>
           <p className="thanks-header">Thank You!</p>
-          <i className="fas fa-pizza-slice thank-you-pizza"></i>
+          <i className="fas fa-pizza-slice thank-you"></i>
           <p className="thanks-subtext">
-            You should receive an email with the details of your reservation.
+            We will hold your table for at most 15 minutes.
           </p>
         </Col>
       </Row>

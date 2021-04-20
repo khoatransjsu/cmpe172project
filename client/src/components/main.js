@@ -1,7 +1,9 @@
 /* eslint-disable import/no-anonymous-default-export */
 import React from "react";
 import { Row, Col, Button } from "reactstrap";
-import image from "../images/cafe.jpg"
+import image from "../images/cafe.jpg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export default props => {
   return (
     <div>
@@ -9,7 +11,7 @@ export default props => {
         <Col>
           <p className="looking-for-pizza">
               If you're looking for a Hot Bowl of Pho
-            <i className="fas fa-pizza-slice pizza-slice"></i>
+              <FontAwesomeIcon icon="coffee" />
           </p>
           <Button
             color="none"

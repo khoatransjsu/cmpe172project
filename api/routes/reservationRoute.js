@@ -11,8 +11,7 @@ router.post("/", function(req, res, next) {
       if (days.length > 0) {
         let day = days[0];
         day.tables.forEach(table => {
-          if (table._id == req.body.table) {
-            // The correct table is table
+          if (table._id == req.body.table) {          
             table.reservation = new Reservation({
               name: req.body.name,
               phone: req.body.phone,
@@ -23,7 +22,7 @@ router.post("/", function(req, res, next) {
               if (err) {
                 console.log(err);
               } else {
-                console.log("Reserved");
+                console.log("Table Reserved");
                 res.status(200).send("Reservation Added");
               }
             });

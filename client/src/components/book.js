@@ -40,19 +40,20 @@ export default props => {
   // List of potential locations
   const [locations] = useState(["Any Location", "Patio", "Inside", "Bar"]);
   const [times] = useState([
-    "9:00 AM",
-    "10:00 AM",
     "11:00 AM",
+    "11:30 AM",
     "12:00 PM",
+    "12:30 PM",
     "1:00 PM",
+    "1:30 PM",
     "2:00 PM",
+    "2:30 PM",
     "3:00 PM",
     "4:00 PM",
     "5:00 PM",
     "6:00 PM",
     "7:00 PM",
-    "8:00 PM",
-
+   
   ]);
   // Basic reservation "validation"
   const [reservationError, setReservationError] = useState(false);
@@ -95,7 +96,7 @@ export default props => {
     if (selection.time && selection.date) {
       (async _ => {
         let datetime = getDate();
-        let res = await fetch("http://localhost:5000/availability", {
+        let res = await fetch("http://localhost/availability", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -130,7 +131,7 @@ export default props => {
       setReservationError(true);
     } else {
       const datetime = getDate();
-      let res = await fetch("http://localhost:5000/reserve", {
+      let res = await fetch("http://localhost/reserve", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
