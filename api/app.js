@@ -27,10 +27,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // Routes
+app.use("/", require("./routes/index"));
 app.use("/availability", require("./routes/availabilityRoute"));
 app.use("/reserve", require("./routes/reservationRoute"));
 
-const port = process.env.PORT;
 
-app.listen(port, () => console.log(`Server is running on port ${port}`));
+app.listen(80, () => console.log('Server is running on port 80'));
 
