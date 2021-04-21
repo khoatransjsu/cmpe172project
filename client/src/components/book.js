@@ -117,10 +117,10 @@ export default props => {
         setTotalTables(tables);
       })();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, [selection.time, selection.date, selection.size, selection.location]);
 
-  // Make the reservation if all details are filled out
+  
   const reserve = async _ => {
     if (
       (booking.name.length === 0) |
