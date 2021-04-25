@@ -11,7 +11,7 @@ router.post("/", function(req, res, next) {
   Day.find({ date: dateTime }, (err, docs) => {
     if (!err) {
       if (docs.length > 0) {
-        console.log("Record exists");
+        console.log("Request available");
         res.status(200).send(docs[0]);
       } else {
         const allTables = require("../data/allTables");
