@@ -8,7 +8,7 @@ var tableSchema = new mongoose.Schema({
   isAvailable: Boolean,
   location: String,
   reservation: {
-    //required: false,
+    required: false,
     type: reservationSchema
   }
 });
