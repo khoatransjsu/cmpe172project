@@ -8,7 +8,7 @@ require('dotenv').config();
 // MongoDB
 const mongoose = require("mongoose");
 mongoose
-  .connect(`mongodb+srv://${process.env.DB_NAME}:${process.env.DB_PASS}@khoatran.v5cxx.mongodb.net/booking?retryWrites=true&w=majority`, {
+  .connect(`mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@khoatran.v5cxx.mongodb.net/booking?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useFindAndModify: false,
     useUnifiedTopology: true,
