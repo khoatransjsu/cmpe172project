@@ -6,10 +6,9 @@ export default _ => {
     <div>
       <Row noGutters className="text-center">
         <Col>
-          <p className="thanks-header">Thank You!</p>
-          <i className="fas fa-pizza-slice thank-you"></i>
+          <p className="thanks-header">Thank You for Your Reservation!</p>
           <p className="thanks-subtext">
-            Thank You for Your Reservation!
+            We Hope You Will Enjoy to Dine in our Place!
           </p>
         </Col>
       </Row>

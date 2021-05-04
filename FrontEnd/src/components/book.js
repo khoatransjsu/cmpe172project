@@ -41,7 +41,6 @@ export default props => {
     "12:00 PM",
     "1:00 PM",
     "2:00 PM",
-    "2:30 PM",
     "3:00 PM",
     "4:00 PM",
     "5:00 PM",
@@ -90,7 +89,8 @@ export default props => {
     if (selection.time && selection.date) {
       (async _ => {
         let datetime = getDate();
-        let res = await fetch("http://ec2-13-52-216-193.us-west-1.compute.amazonaws.com/availability", {
+        const awsUrl = "http://ec2-18-144-167-137.us-west-1.compute.amazonaws.com";
+        let res = await fetch("http://localhost:80/availability", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -125,7 +125,9 @@ export default props => {
       setReservationError(true);
     } else {
       const datetime = getDate();
-      let res = await fetch("http://ec2-13-52-216-193.us-west-1.compute.amazonaws.com/reserve", {
+      const awsUrl = "http://ec2-18-144-167-137.us-west-1.compute.amazonaws.com";
+      
+      let res = await fetch("http://localhost:80/reserve", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
