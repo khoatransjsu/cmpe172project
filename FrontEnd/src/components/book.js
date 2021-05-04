@@ -1,5 +1,4 @@
 /* eslint-disable import/no-anonymous-default-export */
-
 import React, { useState, useEffect } from "react";
 import {
   Row,
@@ -30,22 +29,17 @@ export default props => {
     size: 0
   });
 
-  // User's booking details
   const [booking, setBooking] = useState({
     name: "",
     phone: "",
     email: ""
   });
 
-  // List of potential locations
   const [locations] = useState(["Any Location", "Patio", "Inside", "Bar"]);
   const [times] = useState([
     "11:00 AM",
-    "11:30 AM",
     "12:00 PM",
-    "12:30 PM",
     "1:00 PM",
-    "1:30 PM",
     "2:00 PM",
     "2:30 PM",
     "3:00 PM",
@@ -53,7 +47,7 @@ export default props => {
     "5:00 PM",
     "6:00 PM",
     "7:00 PM",
-   
+    "8:00 PM"
   ]);
   // Basic reservation "validation"
   const [reservationError, setReservationError] = useState(false);
@@ -453,7 +447,7 @@ export default props => {
                   reserve();
                 }}
               >
-                Book Now
+                Reserve Now
               </Button>
             </Col>
           </Row>

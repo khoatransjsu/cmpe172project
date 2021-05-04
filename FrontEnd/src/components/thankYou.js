@@ -9,7 +9,7 @@ export default _ => {
           <p className="thanks-header">Thank You!</p>
           <i className="fas fa-pizza-slice thank-you"></i>
           <p className="thanks-subtext">
-            We will hold your table for at most 15 minutes.
+            Thank You for Your Reservation!
           </p>
         </Col>
       </Row>
