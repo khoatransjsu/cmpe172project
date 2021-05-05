@@ -5,9 +5,10 @@
 - Sample Demo Screenshots
 - Folder structure:
     • FrontEnd
-        o JS Code
+        o ReactJS
     • BackEnd
-        o Java/Node/Go code
+        o Node
+        o MongoDB Atlas
     • Scripts
         o Build/Setup scripts
         o Start/Stop scripts

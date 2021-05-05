@@ -89,8 +89,8 @@ export default props => {
     if (selection.time && selection.date) {
       (async _ => {
         let datetime = getDate();
-        const awsUrl = "http://ec2-18-144-167-137.us-west-1.compute.amazonaws.com";
-        let res = await fetch("http://localhost:80/availability", {
+        const awsUrl = "ec2-18-144-167-137.us-west-1.compute.amazonaws.com";
+        let res = await fetch(`http://${awsUrl}/availability`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -125,9 +125,9 @@ export default props => {
       setReservationError(true);
     } else {
       const datetime = getDate();
-      const awsUrl = "http://ec2-18-144-167-137.us-west-1.compute.amazonaws.com";
+      const awsUrl = "ec2-18-144-167-137.us-west-1.compute.amazonaws.com";
       
-      let res = await fetch("http://localhost:80/reserve", {
+      let res = await fetch(`http://${awsUrl}/reserve`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
