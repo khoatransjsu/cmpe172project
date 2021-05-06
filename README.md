@@ -5,6 +5,7 @@
 - Sample Demo Screenshots
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/54516445/117079016-cd82e180-acef-11eb-8e27-d9c9cc9a60b1.png">
 <img width="504" alt="image" src="https://user-images.githubusercontent.com/54516445/117079089-f3a88180-acef-11eb-8552-35672c2c982c.png">
+
 - Folder structure:
     • FrontEnd
         o ReactJS
