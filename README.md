@@ -4,17 +4,17 @@
 - Project Introduction: create a restaurant reservation booking application that allows user(s) be able to make a resvervation with desired date, time, location, capacity.
 - Sample Demo Screenshots 
 - Folder structure:
-    • FrontEnd
-        o ReactJS
-    • BackEnd
-        o Node
-        o MongoDB Atlas
-    • Scripts
-        o Build/Setup scripts
-        o Start/Stop scripts
-        o DB Schema
-        o Docker build script
-    • Readme
+    - FrontEnd
+        - ReactJS
+    - BackEnd
+        - Node
+        - MongoDB Atlas
+    - Scripts
+        - Build/Setup scripts
+        - Start/Stop scripts
+        - DB Schema
+        - Docker build script
+    - Readme
 - Instructions on how to run the project locally.
     . To start the back-end: cd to Client folder: npm install then npm run start
     . To start the front-end: cd to Server folder: npm install then npm run start
