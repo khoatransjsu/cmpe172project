@@ -1,7 +1,8 @@
-- University Name - SJSU
+- University: San Jose States University 
 - Course: Enterprise Software - CMPE172/ Spring 2021
 - Team Members: Khoa Tran, Tai Huynh, Tim Kim
-- Project Introduction: create a restaurant reservation booking application that allows user(s) be able to make a resvervation with desired date, time, location, capacity.
+- Project Introduction: 
+    -  Create a restaurant reservation booking application that allows user(s) be able to make a resvervation with desired date, time, location, capacity.
 - Sample Demo Screenshots 
 - Folder structure:
     - FrontEnd
