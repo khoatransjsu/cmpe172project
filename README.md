@@ -4,6 +4,10 @@
 - Project Introduction: 
     -  Create a restaurant reservation booking application that allows user(s) be able to make a resvervation with desired date, time, location, capacity.
 - Sample Demo Screenshots 
+<img width="570" alt="image" src="https://user-images.githubusercontent.com/54516445/117396268-70815a00-aeae-11eb-94dd-cb4d22c86a4a.png">
+<img width="498" alt="image" src="https://user-images.githubusercontent.com/54516445/117396296-7e36df80-aeae-11eb-9a49-594c1214f4b0.png">
+<img width="520" alt="image" src="https://user-images.githubusercontent.com/54516445/117396314-87c04780-aeae-11eb-87e4-932d79c449a3.png">
+
 - Folder structure:
     - FrontEnd
         - ReactJS
