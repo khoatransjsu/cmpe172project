@@ -17,12 +17,12 @@
         - Docker build script
     - Readme
 - Instructions on how to run the project locally:
-    - To start the back-end: cd to Client folder 
+    - To start the back-end: cd to BackEnd folder 
         - npm install 
-        - then npm run start
-    - To start the front-end: cd to Server folder
+        - then npm start
+    - To start the front-end: cd to FrontEnd folder
         -  npm install 
-        -  then npm run start
+        -  then npm tart
 
 - System Diagram, Class/Sequence/Db Schema from project Report
 <img width="478" alt="image" src="https://user-images.githubusercontent.com/54516445/117079016-cd82e180-acef-11eb-8e27-d9c9cc9a60b1.png">
